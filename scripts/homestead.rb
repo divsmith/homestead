@@ -13,6 +13,7 @@ class Homestead
       vb.customize ["modifyvm", :id, "--cpus", settings["cpus"] ||= "1"]
       vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
       vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+      vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/v-root", "1"]
     end
 
     # Configure Port Forwarding To The Box
@@ -61,6 +62,12 @@ class Homestead
             s.args = [var["key"], var["value"]]
         end
       end
+    end
+
+    # Custom Configuration
+    config.vm.provision "shell" do |s|
+      s.inline = "chmod u+x /vagrant/scripts/custom.sh"
+      s.inline = "bash /vagrant/scripts/custom.sh"
     end
   end
 end
