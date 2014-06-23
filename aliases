@@ -4,6 +4,11 @@ alias ...="cd ../.."
 alias h='cd ~'
 alias c='clear'
 
+alias gs='git status'
+alias gc='git commit'
+alias gk='git checkout'
+alias ga='git add'
+
 function serve() {
 	if [[ "$1" && "$2" ]]
 	then
