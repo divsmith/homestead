@@ -3,30 +3,18 @@ ip: "192.168.10.10"
 memory: 2048
 cpus: 1
 
-authorize: C:\cygwin64/home/Parker/.ssh/id_rsa.pub
+authorize: C:\cygwin64/home/User/.ssh/id_rsa.pub
 
 keys:
-    - C:\cygwin64/home/Parker/.ssh/id_rsa
+    - C:\cygwin64/home/User/.ssh/id_rsa
 
 folders:
-    - map: C:\cygwin64/home/Parker/code/php/laracasts
-      to: /code/php/laracasts
-
-    - map: C:\cygwin64\home\Parker\code\js\angular
-      to: /code/js/angular
-
-    - map: C:\cygwin64\home\Parker\code\projects\parkersmith.us
-      to: /code/projects/parkersmith.us
+    - map: C:\cygwin64/home/Parker/code/project
+      to: /code/project
 
 sites:
-    - map: lesson.app
-      to: /code/php/laracasts/public
-
-    - map: angular.app
-      to: /code/js/angular
-
-    - map: parkersmith.app
-      to: /code/projects/parkersmith.us/public
+    - map: project.app
+      to: /code/project/public
 
 variables:
     - key: APP_ENV
