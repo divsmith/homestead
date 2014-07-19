@@ -4,14 +4,14 @@
 sudo apt-get update
 
 # Git Configuration
-name="Parker Smith"
-email="parker@parkersmith.us"
+name="Your Name"
+email="your@email.com"
 
 config="
 [user]
 	name=$name
 	email=$email"
-	
+
 echo "$config" > /home/vagrant/.gitconfig
 
 # Update npm

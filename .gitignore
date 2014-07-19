@@ -4,3 +4,4 @@ Homestead.sublime-workspace
 id_rsa.pub
 .idea/
 Homestead.yaml
+/scripts/custom.sh
