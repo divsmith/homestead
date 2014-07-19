@@ -8,6 +8,10 @@ alias gs='git status'
 alias gc='git commit'
 alias gk='git checkout'
 alias ga='git add'
+alias gpom='git push origin master'
+alias gpo='git push origin'
+alias gp='git push'
+alias gb='git branch'
 
 function serve() {
 	if [[ "$1" && "$2" ]]
