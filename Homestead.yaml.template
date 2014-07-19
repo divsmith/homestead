@@ -11,7 +11,7 @@ keys:
     - C:\cygwin64/home/User/.ssh/config
 
 folders:
-    - map: C:\cygwin64/home/Parker/code/project
+    - map: C:\cygwin64/home/User/code/project
       to: /code/project
 
 sites:
