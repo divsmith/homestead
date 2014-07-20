@@ -15,6 +15,7 @@ alias gb='git branch'
 alias gm='git merge'
 alias cc='vendor/bin/codecept'
 alias ccr='vendor/bin/codecept run'
+alias ccrf='vendor/bin/codecept run functional'
 alias pa='php artisan'
 
 function serve() {
