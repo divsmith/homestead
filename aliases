@@ -17,6 +17,7 @@ alias cc='vendor/bin/codecept'
 alias ccr='vendor/bin/codecept run'
 alias ccrf='vendor/bin/codecept run functional'
 alias pa='php artisan'
+alias cda='composer dump-autoload'
 
 function serve() {
 	if [[ "$1" && "$2" ]]
