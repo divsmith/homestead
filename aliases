@@ -20,7 +20,6 @@ alias ccri='vendor/bin/codecept run integration'
 alias pa='php artisan'
 alias cda='composer dump-autoload'
 alias e='exit'
-alias re='!!'
 
 function serve() {
 	if [[ "$1" && "$2" ]]
