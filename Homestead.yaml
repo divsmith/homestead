@@ -1,0 +1,28 @@
+---
+ip: "192.168.10.10"
+memory: 2048
+cpus: 1
+
+authorize: /Users/Parker/.ssh/id_rsa.pub
+
+keys:
+    - /Users/Parker/.ssh/id_rsa
+
+folders:
+    - map: ~/code/php
+      to: /code
+
+sites:
+    - map: larabook.app
+      to: /code/larabook/public
+    - map: lesson.app
+      to: /code/laracasts/public
+    - map: laravel5.app
+      to: /code/laravel5.0/public
+
+databases:
+    - homestead
+
+variables:
+    - key: APP_ENV
+      value: local

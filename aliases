@@ -21,6 +21,7 @@ alias phpspec='vendor/bin/phpspec'
 alias pa='php artisan'
 alias cda='composer dump-autoload'
 alias e='exit'
+alias psr='phpspec run'
 
 function serve() {
 	if [[ "$1" && "$2" ]]
