@@ -6,3 +6,4 @@ id_rsa.pub
 Homestead.yaml
 /scripts/custom.sh
 project-aliases
+.DS_Store

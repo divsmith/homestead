@@ -11,14 +11,16 @@ keys:
 folders:
     - map: ~/code/php
       to: /code
+    - map: ~/code/design/trestle-layout
+      to: /code/trestle-layout
 
 sites:
     - map: larabook.app
       to: /code/larabook/public
-    - map: lesson.app
-      to: /code/laracasts/public
-    - map: laravel5.app
-      to: /code/laravel5.0/public
+    - map: first.app
+      to: /code/my-first-app/public
+    - map: trestle.layout
+      to: /code/trestle-layout/src
 
 databases:
     - homestead
