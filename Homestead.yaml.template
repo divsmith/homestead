@@ -18,6 +18,9 @@ sites:
     - map: project.app
       to: /code/project/public
 
+databases:
+    - homestead
+
 variables:
     - key: APP_ENV
       value: local
