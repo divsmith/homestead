@@ -4,6 +4,4 @@ Homestead.sublime-workspace
 id_rsa.pub
 .idea/
 Homestead.yaml
-/scripts/custom.sh
-project-aliases
 .DS_Store
