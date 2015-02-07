@@ -40,12 +40,17 @@ class Homestead
 
     # Copy The Bash Aliases
     config.vm.provision "shell" do |s|
-      s.inline = "cp /vagrant/aliases /home/vagrant/.bash_aliases"
+      s.inline = "cp /vagrant/vm.aliases /home/vagrant/.bash_aliases"
     end
 
-    # Copy The Project Bash Aliases
+    # Add Other Aliases
     config.vm.provision "shell" do |s|
-      s.inline = "cat /vagrant/project-aliases >> /home/vagrant/.bash_aliases"
+      s.inline =
+      "echo \". /vagrant/aliases/.aliases
+
+        for file in /vagrant/aliases/*.aliases; do
+            source \"$file\"
+        done\" >> /home/vagrant/.bash_aliases"
     end
 
     # Register All Of The Configured Shared Folders

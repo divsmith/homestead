@@ -1,0 +1,23 @@
+# --- Git Aliases ---
+alias gs='git status'
+alias gc='git commit'
+alias ga='git add'
+alias gk='git checkout'
+alias gp='git push'
+alias gpo='git push origin'
+alias gpom='git push origin master'
+alias gb='git branch'
+alias gm='git merge'
+
+# --- Vagrant Aliases ---
+alias vu='vagrant up'
+alias vup='vagrant up --provision'
+alias vrp='vagrant reload --provision'
+alias vs='vagrant status'
+alias vh='vagrant halt'
+alias vsus='vagrant suspend'
+alias vssh='vagrant ssh'
+
+# --- Navigation Aliases ---
+alias h='cd ~'
+
