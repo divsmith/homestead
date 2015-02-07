@@ -89,12 +89,6 @@ class Homestead
       end
     end
 
-    # Custom Configuration
-    config.vm.provision "shell" do |s|
-      s.inline = "chmod u+x /vagrant/scripts/custom.sh"
-      s.inline = "bash /vagrant/scripts/custom.sh"
-    end
-
     # Update Composer On Every Provision
     config.vm.provision "shell" do |s|
       s.inline = "/usr/local/bin/composer self-update"
